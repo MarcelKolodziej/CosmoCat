@@ -17,12 +17,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
-
     private bool IsFacingRight = true;
     private bool isWalking; 
     private bool isGround;
     private bool canJump;
-
 
     public Transform groundCheck;
 
@@ -81,6 +79,8 @@ public class PlayerController : MonoBehaviour
     private void UpdateAnimations()
     {
         anim.SetBool("isWalking", isWalking);
+        anim.SetBool("isGrounded", isGround);
+        anim.SetFloat("yVelocity", rb.velocity.y);
     }
 
 
