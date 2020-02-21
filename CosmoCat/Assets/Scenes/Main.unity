@@ -21020,7 +21020,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &1665717114
 BoxCollider2D:
@@ -21061,18 +21061,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  jumpForce: 16
+  jumpForce: 16.48
   groundCheckRadius: 0.3
-  wallCheckDistance: 0.4
-  wallSlidingSpeed: 2
+  wallCheckDistance: 0.65
+  wallSlidingSpeed: 1
   movementForceInAir: 2
   airDragMultiplayer: 0.9
   variableJumpHeightMultiplier: 0.5
   wallHopForce: 4
   wallJumpForce: 4
+  jumpTimerSet: 0.15
+  turnTimerSet: 0.1
   wallHopDirection: {x: 4, y: 4}
   wallJumpDirection: {x: 4, y: 4}
-  amountOfJumps: 2
+  amountOfJumps: 4
   wallCheck: {fileID: 2122636478}
   groundCheck: {fileID: 326546684}
   whatIsGround:
