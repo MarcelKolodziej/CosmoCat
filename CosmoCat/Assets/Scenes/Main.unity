@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326546683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.968, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 0.8, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1665717112}
@@ -21065,7 +21065,14 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   wallCheckDistance: 0.4
   wallSlidingSpeed: 2
-  amountOfJumps: 1
+  movementForceInAir: 2
+  airDragMultiplayer: 0.9
+  variableJumpHeightMultiplier: 0.5
+  wallHopForce: 4
+  wallJumpForce: 4
+  wallHopDirection: {x: 4, y: 4}
+  wallJumpDirection: {x: 4, y: 4}
+  amountOfJumps: 2
   wallCheck: {fileID: 2122636478}
   groundCheck: {fileID: 326546684}
   whatIsGround:
